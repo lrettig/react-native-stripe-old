@@ -3,8 +3,8 @@
 #import "RCTStripe.h"
 #import "RCTLog.h"
 
-@interface RCTStripe () <PKPaymentAuthorizationViewControllerDelegate>
-@end
+//@interface RCTStripe () <PKPaymentAuthorizationViewControllerDelegate>
+//@end
 
 @implementation RCTStripe
 
@@ -12,12 +12,16 @@
 {
   if ((self = [super init])) {
       // init code here
+//      [self beginApplePay];
+      UILabel *myLabel = [[UILabel alloc] init];
+      [myLabel setText:@"Hello world"];
+      [self addSubview:myLabel];
   }
 
   return self;
 }
 
-- (void)beginApplePay:(id)sender {
+- (void)beginApplePay {
 //    self.applePaySucceeded = NO;
 //    self.applePayError = nil;
     
@@ -61,28 +65,28 @@
                                              }];
 }
 
-- (void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller {
-    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
-    UIViewController *rootViewController = keyWindow.rootViewController;
-    [rootViewController dismissViewControllerAnimated:YES completion:^{
-        RCTLog(@"payment authorization VC did finish");
-//        if (self.applePaySucceeded) {
-//            [self paymentSucceeded];
-//        } else if (self.applePayError) {
-//            [self presentError:self.applePayError];
-//        }
-//        self.applePaySucceeded = NO;
-//        self.applePayError = nil;
-    }];
-}
-
-//- (void)layoutSubviews
-//{
-//    [super layoutSubviews];
-//    RCTAssert(self.subviews.count == 1, @"we should only have exactly one subview");
-////    RCTAssert([self.subviews lastObject] == _loginButton, @"our only subview should be a fbsdkloginbutton");
-////    _loginButton.frame = _loginButton.bounds;
+//- (void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller {
+//    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+//    UIViewController *rootViewController = keyWindow.rootViewController;
+//    [rootViewController dismissViewControllerAnimated:YES completion:^{
+//        RCTLog(@"payment authorization VC did finish");
+////        if (self.applePaySucceeded) {
+////            [self paymentSucceeded];
+////        } else if (self.applePayError) {
+////            [self presentError:self.applePayError];
+////        }
+////        self.applePaySucceeded = NO;
+////        self.applePayError = nil;
+//    }];
 //}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    RCTAssert(self.subviews.count == 1, @"we should only have exactly one subview");
+//    RCTAssert([self.subviews lastObject] == _loginButton, @"our only subview should be a fbsdkloginbutton");
+//    _loginButton.frame = _loginButton.bounds;
+}
 
 - (void)insertReactSubview:(UIView *)view atIndex:(NSInteger)atIndex
 {

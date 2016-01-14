@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F3A6BA91ACFC19D00CA65F7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3A6BA51ACFC19D00CA65F7 /* Bolts.framework */; };
 		D81E57541C47E2B600C114CB /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D81E57531C47E2B600C114CB /* Stripe.framework */; };
 		D81E575A1C47E39000C114CB /* RCTStripe.m in Sources */ = {isa = PBXBuildFile; fileRef = D81E57561C47E39000C114CB /* RCTStripe.m */; };
+		D81E579E1C47F85900C114CB /* RCTStripeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D81E579D1C47F85900C114CB /* RCTStripeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +26,11 @@
 
 /* Begin PBXFileReference section */
 		4F3A6B5B1ACFBCC500CA65F7 /* libRCTStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F3A6BA51ACFC19D00CA65F7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		D81E57531C47E2B600C114CB /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Stripe.framework; sourceTree = "<group>"; };
 		D81E57561C47E39000C114CB /* RCTStripe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTStripe.m; path = RCTStripe/RCTStripe.m; sourceTree = "<group>"; };
 		D81E57571C47E39000C114CB /* RCTStripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTStripe.h; path = RCTStripe/RCTStripe.h; sourceTree = "<group>"; };
+		D81E579D1C47F85900C114CB /* RCTStripeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTStripeManager.m; path = RCTStripe/RCTStripeManager.m; sourceTree = "<group>"; };
+		D81E579F1C47F8A600C114CB /* RCTStripeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTStripeManager.h; path = RCTStripe/RCTStripeManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F3A6BA91ACFC19D00CA65F7 /* Bolts.framework in Frameworks */,
 				D81E57541C47E2B600C114CB /* Stripe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,9 +48,11 @@
 		4F3A6B521ACFBCC500CA65F7 = {
 			isa = PBXGroup;
 			children = (
+				D81E579D1C47F85900C114CB /* RCTStripeManager.m */,
+				D81E579F1C47F8A600C114CB /* RCTStripeManager.h */,
 				D81E57561C47E39000C114CB /* RCTStripe.m */,
 				D81E57571C47E39000C114CB /* RCTStripe.h */,
-				4F3A6B961ACFBEC400CA65F7 /* FacebookSDK */,
+				4F3A6B961ACFBEC400CA65F7 /* StripeSDK */,
 				4F3A6B5C1ACFBCC500CA65F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,13 +65,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4F3A6B961ACFBEC400CA65F7 /* FacebookSDK */ = {
+		4F3A6B961ACFBEC400CA65F7 /* StripeSDK */ = {
 			isa = PBXGroup;
 			children = (
 				D81E57531C47E2B600C114CB /* Stripe.framework */,
-				4F3A6BA51ACFC19D00CA65F7 /* Bolts.framework */,
 			);
-			name = FacebookSDK;
+			name = StripeSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,7 +89,7 @@
 			dependencies = (
 			);
 			name = RCTStripe;
-			productName = RCTFBLogin;
+			productName = RCTStripe;
 			productReference = 4F3A6B5B1ACFBCC500CA65F7 /* libRCTStripe.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -99,7 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = "Noah Jorgenson";
+				ORGANIZATIONNAME = "Lane Rettig";
 				TargetAttributes = {
 					4F3A6B5A1ACFBCC500CA65F7 = {
 						CreatedOnToolsVersion = 6.2;
@@ -128,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81E579E1C47F85900C114CB /* RCTStripeManager.m in Sources */,
 				D81E575A1C47E39000C114CB /* RCTStripe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

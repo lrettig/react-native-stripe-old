@@ -9,7 +9,7 @@ var {
   DeviceEventEmitter,
 } = React;
 
-//var { FBLoginManager } = NativeModules;
+var { StripeManager } = NativeModules;
 
 var SuperStripe = React.createClass({
   statics: {
