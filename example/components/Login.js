@@ -8,12 +8,7 @@ var {
 } = React;
 
 var SuperStripe = require('react-native-stripe');
-
-//var FBLogin = require('react-native-facebook-login');
-//var FBLoginMock = require('./facebook/FBLoginMock.js');
-//var FBLoginManager = require('NativeModules').FBLoginManager;
-
-//var FB_PHOTO_WIDTH = 200;
+var StripeManager = require('NativeModules').StripeManager;
 
 var Login = React.createClass({
   getInitialState: function(){
@@ -24,13 +19,10 @@ var Login = React.createClass({
 
   render: function() {
     var _this = this;
-    //var user = this.state.user;
 
     return (
       <View style={styles.loginContainer}>
-
         <SuperStripe/>
-
       </View>
     );
   }

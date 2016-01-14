@@ -1,5 +1,5 @@
 # React Native : Stripe SDK
-`<FBLogin />` provides a [React Native][react-native] component wrapping the native [Stripe SDK](https://github.com/stripe/stripe-ios).
+`<SuperStripe />` provides a [React Native][react-native] component wrapping the native [Stripe SDK](https://github.com/stripe/stripe-ios).
 
 ## Copyright and license
 
