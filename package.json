@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "react-native-facebook-login",
+      "/Users/rettig/wip/breeze-react-native/Breeze"
+    ]
+  ],
+  "_from": "react-native-facebook-login@*",
+  "_id": "react-native-facebook-login@1.0.2",
+  "_inCache": true,
+  "_location": "/react-native-facebook-login",
+  "_nodeVersion": "4.1.0",
+  "_npmUser": {
+    "email": "noah.m.jorgenson@gmail.com",
+    "name": "noah"
+  },
+  "_npmVersion": "2.7.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-native-facebook-login",
+    "raw": "react-native-facebook-login",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-facebook-login/-/react-native-facebook-login-1.0.2.tgz",
+  "_shasum": "199b5905eda68857e4dd0b410d1ac356032b6909",
+  "_shrinkwrap": null,
+  "_spec": "react-native-facebook-login",
+  "_where": "/Users/rettig/wip/breeze-react-native/Breeze",
+  "author": {
+    "name": "Noah Jorgenson"
+  },
+  "bugs": {
+    "url": "https://github.com/magus/react-native-facebook-login/issues"
+  },
+  "dependencies": {},
+  "description": "React Native wrapper for native iOS Facebook SDK login button and manager",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "199b5905eda68857e4dd0b410d1ac356032b6909",
+    "tarball": "http://registry.npmjs.org/react-native-facebook-login/-/react-native-facebook-login-1.0.2.tgz"
+  },
+  "gitHead": "20db8790affccbedbf45e83ad277250c94147bdf",
+  "homepage": "https://github.com/magus/react-native-facebook-login",
+  "installable": true,
+  "keywords": [
+    "android",
+    "facebook",
+    "ios",
+    "login",
+    "native",
+    "react",
+    "react-component",
+    "react-native",
+    "sdk"
+  ],
+  "license": "MIT",
+  "main": "index",
+  "maintainers": [
+    {
+      "name": "noah",
+      "email": "noah.m.jorgenson@gmail.com"
+    }
+  ],
+  "name": "react-native-facebook-login",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magus/react-native-facebook-login"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}
